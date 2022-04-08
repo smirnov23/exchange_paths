@@ -1,0 +1,26 @@
+{
+    "name": "alfacash/exchange-rates",
+    "description": "",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Igor Smirnov",
+            "email": "smirnov23@gmail.com"
+        }
+    ],
+    "require": {
+        "ccxt/ccxt": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alfacash\\ExchangeRates\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alfacash\\ExchangeRates\\Providers\\ExchangeRatesServiceProvider"
+            ]
+        }
+    }
+}
